@@ -1,0 +1,22 @@
+<nav class="menu">
+  <ul>
+    <li><a [routerLink]="['/']">Home</a></li>
+    <li><a [routerLink]="['/signup']">Signup</a></li>
+    <li><a [routerLink]="['/login']">Login</a></li>
+    <!-- <li><a [routerLink]="['/dashboard']">Dashboard</a></li>
+    <li><a [routerLink]="['/configure']">Configure</a></li>
+    <li><a [routerLink]="['/expense']">Expense</a></li> -->
+  </ul>
+</nav>
+<pb-header></pb-header>
+<h1>Login here</h1>
+<form [formGroup]="loginForm" (ngsubmit)="loginUser()">
+    <input type="text" name="username" placeholder="username" formControlName="username">
+    <input type="password" name="password" placeholder="password" formControlName="password">
+    <button (click)="loginUser()" type="submit">Submit</button>
+</form>
+<br>
+<br>
+
+
+
